@@ -1,0 +1,80 @@
+/* GENEL AYARLAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #0d0d0d; /* Koyu siyah arka plan */
+    color: #ffffff; /* Beyaz yazılar */
+    line-height: 1.6;
+}
+
+/* HEADER / NAVBAR */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    background-color: #0d0d0d; /* Navbar koyu tema */
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.tagline {
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Hamburger Menü */
+.hamburger {
+    font-size: 28px;
+    cursor: pointer;
+    display: none; /* Mobilde açılacak */
+}
+
+/* TR/EN Butonları */
+.lang-buttons button {
+    background-color: #ff0000; /* Kırmızı buton */
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* ANA İÇERİK */
+main {
+    padding-top: 80px; /* Navbar boşluğu */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 20px;
+    border-bottom: 1px solid #222;
+}
+
+/* RESPONSIVE / MOBİL */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    .lang-buttons {
+        position: absolute;
+        top: 15px;
+        right: 30px;
+    }
+}
